@@ -11,7 +11,6 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.jupiter.api.Assertions;
 import org.openqa.selenium.WebDriver;
-
 public class ReserveAirbnb {
 
     protected WebDriver driver;
@@ -27,7 +26,6 @@ public class ReserveAirbnb {
     public void que_bryan_se_encuentra_en_la_pagina_de_airbnb() {
         driver = Hooks.webDriverManager.getDriver();
         driver.get(FileReaderManager.getInstance().getConfigReader().getApplicationUrl());
-
 
     }
     @When("busca una estancia en la ciudad de {string}")

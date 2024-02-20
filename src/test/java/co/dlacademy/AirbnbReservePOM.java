@@ -8,7 +8,6 @@ public class AirbnbReservePOM  extends  BaseTest{
     @Test
     void reserve(){
         HomePage homePage = new HomePage(driver);
-
         homePage.opensearch();
         homePage.selectCity("Santa marta");
         homePage.selectDate("Marzo 2024","10");
