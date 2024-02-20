@@ -39,31 +39,6 @@ public class BasePage {
             opensearchButton.click();
         }
 
-      /*  String originalWindow = driver.getWindowHandle();
-        driver.findElement(alertsbutton).click();
-
-        changeWindowNew(driver,driver.findElement(buttonNewTab));
-        Assertions.assertNotEmpty("This is a sample page",driver.findElement(tittleNewPage).getText());
-
-        driver.close();
-        driver.switchTo().window(originalWindow);
-
-
-        changeWindowNew(driver,driver.findElement(buttonNewWindow));
-        Assertions.assertNotEmpty("This is a sample page",driver.findElement(tittleNewPage).getText());
-
-        driver.close();
-        driver.switchTo().window(originalWindow);
-
-        changeWindowNew(driver,driver.findElement(buttonNewMessageWindow));
-        //Esta assertion no la pude hacer
-        // Assertions.assertNotEmpty("This is a sample page",driver.findElement(tittleNewPage).getText());
-
-        driver.close();
-        driver.switchTo().window(originalWindow);
-
-*/
-
 
 
     }
