@@ -24,6 +24,6 @@ public class BaseTest {
         webDriverManager =  new WebDriverManager();
         driver = webDriverManager.getDriver();
         //driver.get("https://www.airbnb.com.co/");
-        driver.get(FileReaderManager.getInstance().getConfigReader().getApplicationUrl());
+        driver.get(FileReaderManager.getInstance().getConfigReader().getApplicationUrl("url"));
     }
 }

@@ -49,8 +49,8 @@ public class ConfigFileReader {
         return 30;
     }
 
-    public String getApplicationUrl() {
-        String url = properties.getProperty("url");
+    public String getApplicationUrl(String urlSite) {
+        String url = properties.getProperty(urlSite);
         if (url != null) return url;
         else
             throw new RuntimeException("Application Url not specified in the Configuration.properties file for the Key:url");

@@ -1,11 +1,10 @@
 package co.dlacademy.stepsdefinitions;
 
 import co.dlacademy.drivermager.FileReaderManager;
-import co.dlacademy.drivermager.WebDriverManager;
-import co.dlacademy.pages.ConfirmPayPage;
-import co.dlacademy.pages.DetailsReserve;
-import co.dlacademy.pages.HomePage;
-import co.dlacademy.pages.ResultSearchPage;
+import co.dlacademy.pages.Airbnb.ConfirmPayPage;
+import co.dlacademy.pages.Airbnb.DetailsReserve;
+import co.dlacademy.pages.Airbnb.HomePage;
+import co.dlacademy.pages.Airbnb.ResultSearchPage;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -14,7 +13,7 @@ import org.openqa.selenium.WebDriver;
 
 public class ReserveAirbnb {
 
-    protected WebDriver driver;
+    public WebDriver driver;
 
     private HomePage homePage;
     private ResultSearchPage resultSearchPage;
@@ -23,10 +22,10 @@ public class ReserveAirbnb {
 
     private ConfirmPayPage confirmPayPage;
 
-    @Given("que Bryan se encuentra en la pagina de Airbnb")
-    public void que_bryan_se_encuentra_en_la_pagina_de_airbnb() {
+    @Given("que Bryan se encuentra en la pagina de {string}")
+    public void que_bryan_se_encuentra_en_la_pagina_de_airbnb(String website) {
         driver = Hooks.webDriverManager.getDriver();
-        driver.get(FileReaderManager.getInstance().getConfigReader().getApplicationUrl());
+        driver.get(FileReaderManager.getInstance().getConfigReader().getApplicationUrl(website));
 
 
     }

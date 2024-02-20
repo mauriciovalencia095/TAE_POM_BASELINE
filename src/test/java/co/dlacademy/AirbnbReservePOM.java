@@ -1,6 +1,6 @@
 package co.dlacademy;
 
-import co.dlacademy.pages.HomePage;
+import co.dlacademy.pages.Airbnb.HomePage;
 import org.junit.jupiter.api.Test;
 
 public class AirbnbReservePOM  extends  BaseTest{

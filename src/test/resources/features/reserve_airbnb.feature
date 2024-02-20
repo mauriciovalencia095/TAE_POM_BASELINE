@@ -2,7 +2,7 @@ Feature:  reserva de estadia Airbnb
 
 
   Scenario: Realizar reserva y ver precio
-    Given que Bryan se encuentra en la pagina de Airbnb
+    Given que Bryan se encuentra en la pagina de "urlAirbnb"
     When  busca una estancia en la ciudad de "Santa marta"
     And   seleciona las fechas de estancia  del "15 Marzo 2024" hasta el "20 Marzo 2024"
     And   especifica una ocupacion para 4 "adultos"
